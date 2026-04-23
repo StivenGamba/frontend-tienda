@@ -1,9 +1,21 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import Sidebar from "./Sidebar"
-import { APP_NAME } from "../config/constants"
+import cartIcon from "../assets/icons/carrito-de-compras.png"
+import bellIcon from "../assets/icons/notificacion.png"
+import userIcon from "../assets/icons/usuario.png"
+import menuIcon from "../assets/icons/menu.png"
+import logo from "../assets/images/logo.png"
+import name from "../assets/images/nombre.png"
+import searchIcon from "../assets/icons/lupa.png"
+import { COLORS } from "../config/theme"
 
 function Navbar() {
   const [open, setOpen] = useState(true)
+  const navigate = useNavigate()
+
+  const openSidebar = () => setOpen(!open)
+  const openNotifications = () => alert("Abrir notificaciones")
 
   return (
     <>
@@ -17,35 +29,60 @@ function Navbar() {
 
         {/* IZQUIERDA */}
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          
-          {/* Botón hamburguesa */}
-          <button onClick={() => setOpen(!open)}>
-            ☰
+          <button onClick={openSidebar} style={{ background: "none", border: "none", cursor: "pointer" }}>
+            <img src={menuIcon} alt="menu" width="25" />
           </button>
 
-          {/* Logo */}
-          <img 
-            src="https://via.placeholder.com/40" 
-            alt="logo" 
-          />
+          <button onClick={() => navigate("/")} style={{ background: "none", border: "none", cursor: "pointer" }}>
+            <img src={logo} alt="logo" width="80" />
+          </button>
 
-          <h3 style={ {color:"#2D1E0E"}}>{APP_NAME}</h3>
+          <button onClick={() => navigate("/")} style={{ background: "none", border: "none", cursor: "pointer" }}>
+            <img src={name} alt="nombre" width="100" />
+          </button>
         </div>
 
-        {/* CENTRO */}
-        <input 
-          type="text" 
-          placeholder="Buscar..." 
-          style={{ width: "40%", padding: "5px", background: "#ffffff" }}
-        />
+        {/* CENTRO → input búsqueda */}
+        <div style={{ position: "relative" }}>
+          <input 
+            type="text" 
+            placeholder="Buscar..." 
+            style={{ 
+              paddingLeft: "35px", 
+              background: "#ffffff", 
+              border: "1px solid #2D1E0E", 
+              borderRadius: "8px",
+              color: COLORS.cafe_primario
+            }}
+          />
+          <img 
+            src={searchIcon} 
+            alt="buscar"
+            style={{
+              position: "absolute",
+              left: "10px",
+              top: "50%",
+              transform: "translateY(-50%)",
+              width: "20px",
+              color: COLORS.cafe_primario
+            }}
+          />
+        </div>
 
         {/* DERECHA */}
-        <div style={{ display: "flex", gap: "15px" }}>
-          <span>🛒</span>
-          <span>🔔</span>
-          <span>👤</span>
-        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
+          <button onClick={() => navigate("/carrito")} style={{ background: "none", border: "none", cursor: "pointer" }}>
+            <img src={cartIcon} alt="carrito" width="25" />
+          </button>
 
+          <button onClick={openNotifications} style={{ background: "none", border: "none", cursor: "pointer" }}>
+            <img src={bellIcon} alt="notificaciones" width="25" />
+          </button>
+
+          <button onClick={() => navigate("/usuario")} style={{ background: "none", border: "none", cursor: "pointer" }}>
+            <img src={userIcon} alt="perfil" width="25" />
+          </button>
+        </div>
       </div>
 
       {/* Sidebar */}
