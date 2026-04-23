@@ -12,7 +12,7 @@ function MainLayout({ children }) {
       <Navbar toggleSidebar={() => setOpen(!open)} />
 
       {/* Contenido horizontal */}
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex", width: "100%"}}>
         
         {/* Sidebar */}
         <Sidebar isOpen={open} />

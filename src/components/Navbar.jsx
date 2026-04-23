@@ -45,9 +45,9 @@ function Navbar({toggleSidebar} ) {
             type="text" 
             placeholder="Buscar..." 
             style={{ 
-              paddingLeft: "35px", 
+              padding: "8px 8px 8px 45px",
               background: "#ffffff", 
-              border: "1px solid #2D1E0E", 
+              border: `1px solid ${COLORS.cafe_primario}`, 
               borderRadius: "8px",
               color: COLORS.cafe_primario
             }}

@@ -50,8 +50,14 @@
   }
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
+  margin: 0px;
 }
 
 #root {
@@ -130,4 +136,8 @@ code {
 .filter-btn.active {
   font-weight: bold;
   border-bottom: 2px solid black;
+}
+
+#root {
+  width: 100%;
 }
