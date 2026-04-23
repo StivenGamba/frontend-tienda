@@ -25,7 +25,7 @@ function Sidebar({ isOpen }){
             {/* Línea inicial */}
             <hr/>
 
-            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            <div  style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <img src={catalogIcon} alt="catalogo" width="20" />
               <Link to="/catalogo" style={{ color: COLORS.cafe_primario, textDecoration: "none", fontWeight: "bold" }}>
                 Catálogo

@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar"
 import Sidebar from "../components/Sidebar"
 import FilterBar from "../components/FilterBar"
+import Footer from "../components/footer"
 import { useState } from "react"
 
 function MainLayout({ children }) {
@@ -22,8 +23,9 @@ function MainLayout({ children }) {
           <FilterBar />
           {children}
         </div>
-
+       
       </div>
+       <Footer/>
     </>
   )
 }

@@ -3,5 +3,6 @@ export const COLORS = {
   gris: "#646363",
   background: "#ffffff",
   gris_claro: "#eeeced",
-  accent: "#c89b7b"
+  accent: "#c89b7b",
+  pastel: "#f5e6d3"
 }

@@ -10,6 +10,7 @@ function FilterBar() {
         gap: "20px",
         padding: "3px 15px",
         background: COLORS.gris_claro,
+        boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
       }}
     >
       {/* Icono + texto */}
