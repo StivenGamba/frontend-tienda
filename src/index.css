@@ -109,3 +109,25 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+.filter-btn {
+  background: transparent;
+  border: none;
+  color: #555; /* puedes usar tu gris */
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px 0;
+  transition: all 0.2s ease;
+}
+
+/* Hover elegante */
+.filter-btn:hover {
+  color: black;
+  transform: translateY(-1px);
+}
+
+/* Opcional: activo */
+.filter-btn.active {
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}

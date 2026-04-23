@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import Sidebar from "./Sidebar"
 import cartIcon from "../assets/icons/carrito-de-compras.png"
 import bellIcon from "../assets/icons/notificacion.png"
 import userIcon from "../assets/icons/usuario.png"
@@ -10,11 +9,9 @@ import name from "../assets/images/nombre.png"
 import searchIcon from "../assets/icons/lupa.png"
 import { COLORS } from "../config/theme"
 
-function Navbar() {
-  const [open, setOpen] = useState(true)
-  const navigate = useNavigate()
+function Navbar({toggleSidebar} ) {
 
-  const openSidebar = () => setOpen(!open)
+  const navigate = useNavigate()
   const openNotifications = () => alert("Abrir notificaciones")
 
   return (
@@ -29,7 +26,7 @@ function Navbar() {
 
         {/* IZQUIERDA */}
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <button onClick={openSidebar} style={{ background: "none", border: "none", cursor: "pointer" }}>
+          <button onClick={toggleSidebar} style={{ background: "none", border: "none", cursor: "pointer" }}>
             <img src={menuIcon} alt="menu" width="25" />
           </button>
 
@@ -85,10 +82,7 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Sidebar */}
-      <div style={{ display: "flex" }}>
-        <Sidebar isOpen={open} />
-      </div>
+
     </>
   )
 }

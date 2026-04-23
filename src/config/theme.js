@@ -1,7 +1,7 @@
 export const COLORS = {
   cafe_primario: "#2D1E0E",
-  secondary: "#e6d5c3",
+  gris: "#646363",
   background: "#ffffff",
-  text: "#333333",
+  gris_claro: "#eeeced",
   accent: "#c89b7b"
 }
