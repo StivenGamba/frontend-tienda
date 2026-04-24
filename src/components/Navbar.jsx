@@ -76,8 +76,9 @@ function Navbar({toggleSidebar} ) {
             <img src={bellIcon} alt="notificaciones" width="25" />
           </button>
 
-          <button onClick={() => navigate("/usuario")} style={{ background: "none", border: "none", cursor: "pointer" }}>
+          <button onClick={() => navigate("/Login")} style={{ background: "none", border: "none", cursor: "pointer" }}>
             <img src={userIcon} alt="perfil" width="25" />
+            
           </button>
         </div>
       </div>

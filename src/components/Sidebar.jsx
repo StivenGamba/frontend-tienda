@@ -3,6 +3,7 @@ import cartIcon from "../assets/icons/carrito-de-compras.png"
 import catalogIcon from "../assets/icons/catalogo.png"
 import contactIcon from "../assets/icons/contacto.png"
 import loginIcon from "../assets/icons/usuario.png"
+import inventarioIcon from "../assets/icons/inventario.png"
 import { COLORS } from "../config/theme"
 
 function Sidebar({ isOpen }){
@@ -45,6 +46,14 @@ function Sidebar({ isOpen }){
               <img src={contactIcon} alt="contacto" width="20" />
               <Link to="/contacto" style={{ color: COLORS.cafe_primario, textDecoration: "none", fontWeight: "bold" }}>
                 Contáctanos
+              </Link>
+            </div>
+            <hr style={{ border: "none", borderTop: `1px solid ${COLORS.cafe_primario}`, margin: "8px 0", width: "100%" }} />
+            
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <img src={inventarioIcon} alt="contacto" width="20" />
+              <Link to="/inventario" style={{ color: COLORS.cafe_primario, textDecoration: "none", fontWeight: "bold" }}>
+                Inventario
               </Link>
             </div>
             <hr style={{ border: "none", borderTop: `1px solid ${COLORS.cafe_primario}`, margin: "8px 0", width: "100%" }} />

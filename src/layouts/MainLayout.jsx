@@ -5,7 +5,7 @@ import Footer from "../components/footer"
 import { useState } from "react"
 
 function MainLayout({ children }) {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
 
   return (
     <>

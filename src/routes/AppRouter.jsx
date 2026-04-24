@@ -4,6 +4,8 @@ import Home from "../pages/Home"
 import Login from "../pages/Login"
 import Catalog from "../pages/Catalog"
 import Cart from "../pages/Cart"
+import Inventory from "../pages/Inventory"
+import ProductCRUD from "../pages/ProductCRUD"
 
 function AppRouter() {
   return (
@@ -14,6 +16,8 @@ function AppRouter() {
           <Route path="/login" element={<Login />} />
           <Route path="/catalogo" element={<Catalog />} />
           <Route path="/carrito" element={<Cart />} />
+          <Route path="/inventario" element={<Inventory />} />
+          <Route path="/productoCRUD" element={<ProductCRUD />} />
         </Routes>
       </MainLayout>
     </BrowserRouter>
