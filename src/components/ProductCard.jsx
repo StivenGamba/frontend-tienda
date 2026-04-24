@@ -1,6 +1,6 @@
 function ProductCard({ product }) {
   return (
-    <div style={{
+    <div className="category-card"  style={{
       border: "1px solid #ddd",
       padding: "10px",
       borderRadius: "8px"

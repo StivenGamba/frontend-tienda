@@ -12,7 +12,7 @@ function Sidebar({ isOpen }){
                 width: isOpen ? "200px" : "0px",
                 transition: "0.3s",
                 overflow: "hidden",
-                background: "#f5e6d3",
+                background: COLORS.pastel,
                 height: "100vh",
                 padding: isOpen ? "20px" : "0px",
                 display: "flex",

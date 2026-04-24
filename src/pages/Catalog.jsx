@@ -1,14 +1,11 @@
-import Banner from "../components/Banner"
-import Categories from "../components/Categories"
-import ProductGrid from "../components/ProductGrid"
+
 
 function Catalog() {
   return (
-    <div style={{background: "#ffffff"}}>
-      <Banner />
-      <Categories />
-      <ProductGrid />
-    </div>
+        <div>
+            <h1>Bienvenido al ctalogo</h1>
+            <p>Aquí irán los productos</p>
+        </div>
   )
 }
 

@@ -21,7 +21,7 @@ function Navbar({toggleSidebar} ) {
         alignItems: "center",
         justifyContent: "space-between",
         padding: "10px 20px",
-        background: "#f5e6d3"
+        background: COLORS.pastel
       }}>
 
         {/* IZQUIERDA */}
@@ -46,7 +46,7 @@ function Navbar({toggleSidebar} ) {
             placeholder="Buscar..." 
             style={{ 
               padding: "8px 8px 8px 45px",
-              background: "#ffffff", 
+              background: COLORS.blanco, 
               border: `1px solid ${COLORS.cafe_primario}`, 
               borderRadius: "8px",
               color: COLORS.cafe_primario

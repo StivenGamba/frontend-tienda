@@ -4,5 +4,7 @@ export const COLORS = {
   background: "#ffffff",
   gris_claro: "#eeeced",
   accent: "#c89b7b",
-  pastel: "#f5e6d3"
+  pastel: "#f5e6d3",
+  negro: "#000000",
+  blanco: "#ffffff"
 }

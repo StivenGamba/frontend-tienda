@@ -10,3 +10,9 @@ export const STORES = {
   tienda_2: "CC. Gran Estación, local 1025",
   tienda_3: "CC. Santa Fé, local 2103",
 }
+
+export const login = {
+  PH_usuario: "telefono o correo",
+  tienda_2: "CC. Gran Estación, local 1025",
+  tienda_3: "CC. Santa Fé, local 2103",
+}
